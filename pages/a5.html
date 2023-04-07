@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookshelf</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/contentPage_style.css" />
+  <link rel="shortcut icon" href="../media/logo-only.png" type="image/x-icon" />
+  <script src="../src/app.js"></script>
+  <script src="../src/a5.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="../index.html">Goodman Camping</a>
+      </div>
+      <input type="text" class="search mobile" placeholder="Search Product..." />
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="backpack.html">Backpacks</a></li>
+        <li><a href="tent.html">Tents</a></li>
+        <li><a href="kitchen.html">Camp Kitchen</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="honesty.html">Honesty</a></li>
+        <li><a href="a5.html">Bookshelf</a></li>
+      </ul>
+      <div class="search desktop">
+        <form name="seachBar" id="searchBar" method="post">
+          <input type="text" placeholder="Search Product..." id="search" />
+          <button type="submit">search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <section class="features">
+    <h2>My Bookshelf</h2>
+    <div class="add">
+      <h3>Add a Book</h3>
+      <form name="addBook" id="addBook" method="post" action="https://httpbin.org/post">
+        <label for="title">Title: </label>
+        <input type="text" name="title" id="title" placeholder="new book title..." required />
+        <label for="author">Author: </label>
+        <input type="text" name="author" id="author" placeholder="author of new book..." required />
+        <br />
+        <label for="Genere">Genere</label>
+        <select name="genere" id="genere" required>
+          <option value="" disabled selected>Select a Genere</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Fairy Tale">Fairy Tale</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Nonfiction">Non-Fiction</option>
+          <option value="Drama">Drama</option>
+          <option value="Horror">Horror</option>
+          <option value="Humor">Humor</option>
+          <option value="Legend">Legend</option>
+          <option value="Poetry">Poetry</option>
+          <option value="Science Fiction">Science Fiction</option>
+        </select>
+        <br />
+        <label for="description">Description: </label>
+        <textarea name="description" id="description" cols="30" rows="3" required></textarea>
+        <br />
+        <input type="reset" value="Clear Input" />
+        <br />
+      </form>
+      <button id="addBkBtn">Add book</button>
+    </div>
+    <hr />
+    <div class="search">
+      <h2>Search for A Book</h2>
+      <p>
+        Leave the search box empty and click "Search" button, you'll get all
+        the books in teh bookshelf
+      </p>
+      <p>
+        You can search by full or partial of
+        <strong>book title, author name, Genere</strong>,or
+        <strong>description</strong>
+      </p>
+      <form name="searchBkForm" id="searchBkForm" method="post" action="https://httpbin.org/post">
+        <input type="text" name="searchBkInput" id="searchBkInput" value="" />
+      </form>
+      <button id="searchBkBtn">Search</button>
+      <button id="searchBkClear">Clear Search Result</button>
+
+      <div class="searchResult"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      1750 Finch Ave E, North York, ON M2J 2X5 • (555) 555 5555 •
+      <a href="#">goodman@goodmancamping.com</a>
+    </p>
+    <p>&copy; 2023 Wai Yin Chung</p>
+    <script>
+      var dt = new Date(document.lastModified);
+      document.write(" This page was last updated on " + dt.toLocaleString());
+    </script>
+  </footer>
+</body>
+
+</html>

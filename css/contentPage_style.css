@@ -1,0 +1,75 @@
+/* header */
+header {    
+    background-image: none;
+    height:75px;
+}
+
+
+/* features*/
+.features h2{
+    color:rgb(70, 125, 70);
+}
+
+.productListContainer{
+    background:  rgba(238, 245, 242, 0.804);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0.5rem;   
+}
+
+.features figure {
+    background-color: rgb(235, 238, 234);
+    justify-content: center;
+    text-align: center;          
+    margin: 1rem 0.5rem;    
+    width: 23%;
+}
+
+.features figcaption{
+    font-size: small;
+    text-transform: uppercase;
+    margin: 0 0.5rem 0.5rem 0.5rem;  
+}
+
+.productImg{  
+    box-shadow: rgb(138, 138, 138) 0 0 6px;  
+    border: 8px solid white;
+    height: 200px;
+    margin: 0.5rem 0.5rem;
+    object-fit: cover;
+    width: 88%;    
+}
+
+.features .productImg:hover {
+    box-shadow: rgb(178, 184, 181) 0 0 8px; 
+    width: 89%;
+    cursor: pointer;
+}
+
+
+
+/* map */
+
+.descContainer iframe{
+    margin: 20px; 
+}
+
+.map {
+    justify-content: center;
+    background-color: rgba(238, 245, 242, 0.804);
+}
+
+/* seneca */
+.senecaLink {
+    margin: 10px;
+}
+
+.senecaLink img{
+    width: 100px;
+}
+.senecaLink a{
+    text-decoration: none;
+}

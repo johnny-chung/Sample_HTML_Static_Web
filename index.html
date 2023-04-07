@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goodman Camping</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="media/logo-only.png" type="image/x-icon">
+    <script src="src/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class = "logo">
+          <a href="index.html">Goodman Camping</a>
+        </div>        
+        <input
+          type="text"
+          class="search mobile"
+          placeholder="Search Product..."
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/backpack.html">Backpacks</a></li>
+          <li><a href="pages/tent.html">Tents</a></li>
+          <li><a href="pages/kitchen.html">Camp Kitchen</a></li>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+          <li><a href="pages/honesty.html">Honesty</a></li>
+          <li><a href="pages/a5.html">Bookshelf</a></li>
+        </ul>
+        <div class="search desktop">
+          <form action="">
+            <input type="text" placeholder="Search Product..." id="search"/>
+            <button type="submit">search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    
+    <section class="features">
+
+      <div class="imgContainer cleft backpack" >
+        <div class="content">
+          <h2>Backpacks and Bags</h2>
+          <p>
+            Our camping backpack is the ultimate gear for your next outdoor
+            adventure. Made with high-quality materials, adjustable padded
+            shoulder straps, and multiple compartments to organize your gear.
+            Equipped with a hydration system and compression straps to keep
+            everything secure. A must-have for any serious camper!
+          </p>
+          <a href="pages/backpack.html">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="imgContainer cright tent" >
+        <div class="content">
+          <h2>Tents and Shelters</h2>
+          <p>
+            Find the perfect tent or shelter for your next camping trip from our
+            range of high-quality products. Designed to withstand the elements,
+            our selection includes backpacking tents, family tents, and
+            easy-to-set-up shelters. Packed with features like adjustable
+            ventilation and waterproof coatings, our products deliver exceptional
+            performance and reliability.
+          </p>
+          <a href="pages/tent.html">Shop Now</a>
+        </div>
+      </div>
+
+      <div class="imgContainer cleft kitchen">
+        <div class="content">
+          <h2>Camp Kitchen</h2>
+          <p>
+            Looking for reliable and high-quality camp kitchen gear for your next
+            camping trip? Our range includes everything from portable stoves and
+            cookware to utensils and dinnerware. Designed to make cooking in the
+            great outdoors easy and enjoyable, our products are built to deliver
+            exceptional performance and durability.
+          </p>
+          <a href="pages/kitchen.html">Shop Now</a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="backTopBtn">
+      <a href="#">back to top</a>
+    </div>
+
+    <footer>
+      <p> 1750 Finch Ave E, North York, ON M2J 2X5 • (555) 555 5555 • <a href=#>goodman@goodmancamping.com</a> </p>  
+      <p> &copy; 2023 Wai Yin Chung </p>        
+      <script>   
+        window.onload = function() {
+          // alert("This website require usage of API. May not work on Matrix")
+          window.setInterval(changeHeroBg, 5000);
+        }       
+          
+        var dt = new Date(document.lastModified);
+        document.write(' This page was last updated on ' + dt.toLocaleString());
+      </script>
+    </footer>
+  </body>
+</html> 

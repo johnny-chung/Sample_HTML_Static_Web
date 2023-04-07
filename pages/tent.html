@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tents</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contentPage_style.css" />
+    <link rel="shortcut icon" href="../media/logo-only.png" type="image/x-icon">
+    <script src="../src/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="../index.html">Goodman Camping</a>
+        </div>
+        <input
+          type="text"
+          class="search mobile"
+          placeholder="Search Product..."
+        />
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="backpack.html">Backpacks</a></li>
+          <li><a href="tent.html">Tents</a></li>
+          <li><a href="kitchen.html">Camp Kitchen</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="honesty.html">Honesty</a></li>          
+          <li><a href="a5.html">Bookshelf</a></li>
+        </ul>
+        <div class="search desktop">
+          <form action="">
+            <input type="text" placeholder="Search Product..." id="search" />
+            <button type="submit">search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <div class="pop hide">
+        <button class="closeBtn">close</button>
+        <div class="descContainer">
+          <img src="#" class="productImg largeImg">
+          <div class="descTxt">
+              <h3 class="descTitle"></h3>
+              <hr>
+              <p>Some description</p>
+              <h3>$00.00</h3>
+          </div>
+      </div>
+    </div>
+
+    <section class="features">
+        <h2> Tents and Shelters</h2>
+      <div class="productListContainer" id="productList"></div>
+    </section>
+
+    <div class="backTopBtn">
+      <a href="#">back to top</a>
+    </div>
+
+    <footer>
+      <p>
+        1750 Finch Ave E, North York, ON M2J 2X5 • (555) 555 5555 •
+        <a href="#">goodman@goodmancamping.com</a>
+      </p>
+      <p>&copy; 2023 Wai Yin Chung</p>
+      <script>
+        window.onload = function () {
+          getImages("tent");
+        };
+        var dt = new Date(document.lastModified);
+        document.write(" This page was last updated on " + dt.toLocaleString());
+      </script>
+    </footer>
+  </body>
+</html>
